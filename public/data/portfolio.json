@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "title": "Daily Bangla News",
+    "description": "This is a platfrom where you get daily updated news in bangla",
+    "technology": [
+      "Next.js",
+      "MongoDB",
+      "Better Auth",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "link":"https://daily-news-bangla.vercel.app/",
+    "image":"https://i.ibb.co.com/dJLFsnwQ/10-16-2026-12-11-PM.png",
+    "git_repo":"https://github.com/mmsabit/daily-news-bangla.git"
+  },
+  {
+    "id": 2,
+    "title": "Bazar Dor",
+    "description": "BazarDor is a platform where you can track the prices of your daily-use and grocery products.",
+    "technology": [
+      "Next.js",
+      "MongoDB",
+      "Better Auth",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "link":"https://bazar-dor-coral.vercel.app/",
+    "image":"https://i.ibb.co.com/J4q2Tzk/10-16-2026-12-16-PM.png",
+    "git_repo":"https://github.com/mmsabit/bazar_dor.git"
+  },
+  {
+    "id": 3,
+    "title": "Aura Sky",
+    "description": "Aura Sky is a comprehensive, elegant weather dashboard designed to provide users with accurate meteorological insights in real time.",
+    "technology": [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite"
+    ],
+    "link":"https://aura-sky-six.vercel.app/",
+    "image":"https://i.ibb.co.com/gMQ3w280/Aura-Sky-Atmospheric-Intelligence-10-27-2026-10-01-AM.png",
+    "git_repo":"https://github.com/mmsabit/aura_sky.git"
+  },
+  {
+    "id": 4,
+    "title": "CommUnity",
+    "description": "CommUnity is a community event platform for discovering and organizing local civic and volunteer activities.",
+    "technology": [
+      "Next.js",
+      "MongoDB",
+      "Better Auth",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "link":"https://community-red-seven.vercel.app/",
+    "image":"https://i.ibb.co.com/XZxnjLwR/Comm-Unity.png",
+    "git_repo":"https://github.com/mmsabit/community.git"
+  }
+]
