@@ -16,6 +16,8 @@ export default function Home() {
       {/* Hero / Header */}
       <Hero />
 
+      
+
       {/* Main Content Sections */}
       <main>
         <About />

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useEffect } from 'react';
 
 interface LightboxModalProps {
@@ -37,7 +38,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({ isOpen, imageSrc, 
       onClick={onClose}
     >
       <div
-        className="relative max-w-4xl max-h-[90vh] flex flex-col items-center justify-center animate-in fade-in zoom-in-95 duration-200"
+        className="relative flex h-[85vh] w-[min(90vw,64rem)] flex-col items-center justify-center"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -49,10 +50,12 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({ isOpen, imageSrc, 
           &times;
         </button>
 
-        <img
+        <Image
           src={imageSrc}
           alt="Portfolio detail"
-          className="max-w-full max-h-[85vh] object-contain rounded shadow-2xl border-4 border-white/10"
+          fill
+          sizes="90vw"
+          className="object-contain"
         />
       </div>
     </div>

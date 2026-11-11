@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sabit-portfolio-hazel.vercel.app/sitemap.xml

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { SectionHeader } from './SectionHeader';
 
@@ -61,9 +62,11 @@ export const Testimonials: React.FC = () => {
             <p className="text-xl sm:text-2xl font-light text-gray-600 leading-relaxed mb-6 italic">
               &ldquo;{current.quote}&rdquo;
             </p>
-            <img
+            <Image
               src={current.img}
               alt={current.name}
+              width={80}
+              height={80}
               className="w-20 h-20 rounded-full mx-auto mb-3 object-cover shadow-sm border-2 border-gray-100"
             />
             <h5 className="font-bold text-lg text-dark">{current.name}</h5>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { SectionHeader } from './SectionHeader';
 
@@ -58,12 +59,12 @@ export const Services: React.FC = () => {
               <p className="text-gray-500 text-sm leading-relaxed mb-4 max-w-sm">
                 {service.desc}
               </p>
-              <a
+              <Link
                 href="#contact"
                 className="inline-block border-b-2 border-primary text-primary hover:text-primary-hover hover:border-primary-hover pb-0.5 text-sm font-semibold transition-colors"
               >
                 Read More
-              </a>
+              </Link>
             </div>
           ))}
         </div>

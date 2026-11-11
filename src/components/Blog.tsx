@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { SectionHeader } from './SectionHeader';
 
@@ -43,11 +45,13 @@ export const Blog: React.FC = () => {
           {posts.map((post) => (
             <div key={post.id} className="flex flex-col items-start group">
               {/* Image & Date Badge */}
-              <div className="relative w-full overflow-hidden rounded mb-4">
-                <img
+              <div className="relative mb-4 aspect-[4/3] w-full overflow-hidden rounded">
+                <Image
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-auto object-cover rounded transition-transform duration-500 group-hover:scale-105"
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
                 {/* Centered circular date badge */}
@@ -65,12 +69,12 @@ export const Blog: React.FC = () => {
               </h5>
 
               {/* Read More Button */}
-              <a
+              <Link
                 href="#blog"
                 className="inline-block border border-primary text-primary hover:bg-primary hover:text-white px-5 py-2 text-sm font-semibold rounded-sm transition-all duration-300"
               >
                 Read More
-              </a>
+              </Link>
             </div>
           ))}
         </div>
