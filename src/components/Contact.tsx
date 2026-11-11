@@ -64,16 +64,14 @@ export const Contact: React.FC = () => {
     }
 
     const serviceId =
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || process.env.VITE_EMAILJS_SERVICE_ID;
+      process.env.EMAILJS_SERVICE_ID || process.env.VITE_EMAILJS_SERVICE_ID;
     const ownerTemplateId =
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_OWNER_ID ||
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ||
-      process.env.VITE_EMAILJS_TEMPLATE_OWNER_ID ||
-      process.env.VITE_EMAILJS_TEMPLATE_ID;
+      process.env.EMAILJS_TEMPLATE_OWNER_ID ||
+      process.env.EMAILJS_TEMPLATE_ID ;
     const userTemplateId =
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_USER_ID || process.env.VITE_EMAILJS_TEMPLATE_USER_ID;
+      process.env.EMAILJS_TEMPLATE_USER_ID ;
     const publicKey =
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || process.env.VITE_EMAILJS_PUBLIC_KEY;
+      process.env.EMAILJS_PUBLIC_KEY;
 
     if (!serviceId || !ownerTemplateId || !publicKey) {
       setErrorMessage(
