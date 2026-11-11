@@ -150,7 +150,7 @@ export const Contact: React.FC = () => {
         <SectionHeader bgTitle="Contact" frontTitle="Contact Me" />
 
         <div className="mx-auto max-w-3xl">
-          <div className="rounded-[2rem] bg-gradient-to-br from-primary/40 via-white to-primary-hover/30 p-px shadow-[0_40px_90px_-50px_rgba(10,18,41,0.5)]">
+          <div className="rounded-4xl bg-linear-to-br from-primary/40 via-white to-primary-hover/30 p-px shadow-[0_40px_90px_-50px_rgba(10,18,41,0.5)]">
             <div className="rounded-[calc(2rem-1px)] bg-white/95 p-5 backdrop-blur-xl sm:p-8 md:p-10">
               {successMessage && (
                 <div

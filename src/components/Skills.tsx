@@ -112,7 +112,7 @@ export const Skills: React.FC = () => {
                   className={`md:col-span-1 ${cardSpans[groupIndex] ?? 'lg:col-span-2'}`}
                 >
                   <SpotlightCard className="group h-full overflow-hidden rounded-3xl border border-gray-100 bg-white p-6 shadow-[0_18px_40px_-32px_rgba(10,18,41,0.5)] transition-all duration-500 hover:border-primary/30 hover:shadow-[0_30px_60px_-35px_rgba(37,99,235,0.45)] sm:p-7">
-                    <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                    <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/40 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
                     <div className="mb-6 flex items-start justify-between gap-4">
                       <div className="flex items-center gap-3">
@@ -123,9 +123,7 @@ export const Skills: React.FC = () => {
                           {categoryGroup.category}
                         </h3>
                       </div>
-                      <span className="select-none text-xs font-bold tabular-nums tracking-wider text-primary/30 transition-colors duration-500 group-hover:text-primary/60">
-                        {String(groupIndex + 1).padStart(2, '0')}
-                      </span>
+                      
                     </div>
 
                     <div className="flex flex-wrap gap-2 sm:gap-2.5">
@@ -140,7 +138,7 @@ export const Skills: React.FC = () => {
                               alt=""
                               width={18}
                               height={18}
-                              className="h-[18px] w-[18px] object-contain transition-transform duration-300 group-hover/chip:scale-110"
+                              className="h-4.5 w-4.5 object-contain transition-transform duration-300 group-hover/chip:scale-110"
                               loading="lazy"
                             />
                           </span>

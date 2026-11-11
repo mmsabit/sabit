@@ -63,10 +63,10 @@ export const ScrollControls: React.FC = () => {
             : 'pointer-events-none flex translate-y-4 opacity-0'
         }`}
       >
-        <span className="flex h-10 w-[26px] items-start justify-center rounded-full border border-white/40 bg-white/5 p-1.5 backdrop-blur-sm transition-colors duration-300 group-hover:border-white/80">
+        <span className="flex h-10 w-6.5 items-start justify-center rounded-full border border-white/40 bg-white/5 p-1.5 backdrop-blur-sm transition-colors duration-300 group-hover:border-white/80">
           <span className="animate-scroll-wheel h-1.5 w-1.5 rounded-full bg-white" />
         </span>
-        <span className="h-6 w-px bg-gradient-to-b from-white/40 to-transparent" />
+        <span className="h-6 w-px bg-linear-to-b from-white/40 to-transparent" />
       </button>
 
       {/* Back to top with progress ring */}

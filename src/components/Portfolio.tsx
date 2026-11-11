@@ -166,11 +166,11 @@ export const Portfolio: React.FC = () => {
                           alt={item.title}
                           fill
                           sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                          className="object-cover object-top transition-transform duration-[900ms] ease-out group-hover:scale-[1.05]"
+                          className="object-cover object-top transition-transform duration-900 ease-out group-hover:scale-[1.05]"
                           loading="lazy"
                         />
 
-                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-night/55 via-transparent to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-100" />
+                        <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-night/55 via-transparent to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-100" />
                       </div>
                     </div>
 

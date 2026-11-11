@@ -108,13 +108,13 @@ export const About: React.FC = () => {
                   <h4 className="text-[11px] font-bold uppercase tracking-[0.28em] text-dark/70">
                     Education
                   </h4>
-                  <span className="h-px flex-1 bg-gradient-to-r from-gray-200 to-transparent" />
+                  <span className="h-px flex-1 bg-linear-to-r from-gray-200 to-transparent" />
                 </div>
 
                 <div className="relative space-y-4 border-l border-primary/20 pl-5 sm:pl-6">
                   {education.map((item) => (
                     <div key={item.institution} className="relative">
-                      <span className="absolute -left-[1.5rem] top-5 h-2 w-2 rounded-full border-2 border-white bg-primary ring-2 ring-primary/15 sm:-left-[1.75rem]" />
+                      <span className="absolute -left-6 top-5 h-2 w-2 rounded-full border-2 border-white bg-primary ring-2 ring-primary/15 sm:-left-7" />
 
                       <div className="rounded-2xl border border-gray-100 bg-gray-50/60 p-4 transition-all duration-300 hover:border-primary/25 hover:bg-white hover:shadow-[0_18px_35px_-25px_rgba(37,99,235,0.5)] sm:p-5">
                         <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1.5">
